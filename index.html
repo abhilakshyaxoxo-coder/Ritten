@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rittenhouse Dentist - Gentle, Advanced Dental Care</title>
+    <meta name="description" content="Modern dentistry with experienced specialists and same-day appointments in Rittenhouse.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Critical CSS Inlined for Performance -->
+    <style>
+        /* Critical Above-the-Fold CSS */
+        :root {
+            --primary-blue: #1a6dcc;
+            --primary-blue-dark: #0d5cb6;
+            --light-gray: #f8f9fa;
+            --medium-gray: #e9ecef;
+            --dark-gray: #343a40;
+            --white: #ffffff;
+            --text-dark: #212529;
+            --text-light: #6c757d;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--white);
+            overflow-x: hidden;
+            transition: var(--transition);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Dark mode variables */
+        .dark-mode {
+            --light-gray: #1a1d21;
+            --medium-gray: #2d3238;
+            --dark-gray: #f8f9fa;
+            --white: #121416;
+            --text-dark: #f8f9fa;
+            --text-light: #adb5bd;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-icon">🦷</div>
+                    <h1>Rittenhouse Dentist</h1>
+                </div>
+                
+                <div class="nav-controls">
+                    <button class="theme-toggle" aria-label="Toggle dark/light mode">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <button class="nav-toggle" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#appointment">Appointment</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="nav-cta"><a href="tel:+15551234567" class="btn-secondary">Call Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="fade-in">Gentle, Advanced Dental Care in Rittenhouse</h2>
+                    <p class="fade-in delay-1">Modern dentistry with experienced specialists and same-day appointments.</p>
+                    <div class="hero-buttons fade-in delay-2">
+                        <a href="#appointment" class="btn-primary">Book Appointment</a>
+                        <a href="tel:+15551234567" class="btn-secondary">Call Now</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <!-- SVG Dental Illustration for Performance -->
+                    <svg class="dental-illustration" viewBox="0 0 400 300" aria-hidden="true">
+                        <rect width="400" height="300" fill="var(--light-gray)"/>
+                        <circle cx="200" cy="150" r="80" fill="var(--primary-blue)" opacity="0.1"/>
+                        <path d="M120,150 Q200,80 280,150 Q200,220 120,150" fill="var(--primary-blue)" opacity="0.2"/>
+                        <circle cx="200" cy="150" r="60" fill="var(--white)" stroke="var(--primary-blue)" stroke-width="2"/>
+                        <path d="M180,140 L190,140 L190,160 L180,160 Z M210,140 L220,140 L220,160 L210,160 Z" 
+                              fill="var(--primary-blue)"/>
+                        <path d="M170,180 L230,180 Q200,200 170,180" fill="none" stroke="var(--primary-blue)" stroke-width="2"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <!-- Trust Badges -->
+            <div class="trust-badges slide-up">
+                <div class="trust-badge">
+                    <div class="badge-icon">👥</div>
+                    <div class="badge-content">
+                        <h3>500+</h3>
+                        <p>Happy Patients</p>
+                    </div>
+                </div>
+                <div class="trust-badge">
+                    <div class="badge-icon">📅</div>
+                    <div class="badge-content">
+                        <h3>15+ Years</h3>
+                        <p>Experience</p>
+                    </div>
+                </div>
+                <div class="trust-badge">
+                    <div class="badge-icon">⚕️</div>
+                    <div class="badge-content">
+                        <h3>Modern</h3>
+                        <p>Equipment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="appointment-section" id="appointment">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="fade-in">Schedule Your Visit</h2>
+                <p class="fade-in delay-1">Book your appointment online or call us at (555) 123-4567</p>
+            </div>
+            
+            <div class="appointment-container slide-up">
+                <div class="appointment-visual">
+                    <!-- SVG Calendar Illustration -->
+                    <svg class="calendar-illustration" viewBox="0 0 300 300" aria-hidden="true">
+                        <rect width="300" height="300" fill="var(--light-gray)"/>
+                        <rect x="50" y="50" width="200" height="200" rx="10" fill="var(--white)" stroke="var(--primary-blue)" stroke-width="2"/>
+                        <rect x="50" y="50" width="200" height="40" fill="var(--primary-blue)"/>
+                        <text x="150" y="75" text-anchor="middle" fill="var(--white)" font-weight="bold" font-size="18">APPOINTMENT</text>
+                        <circle cx="150" cy="170" r="30" fill="var(--primary-blue)" opacity="0.1"/>
+                        <path d="M150,140 v60 M135,155 h30" stroke="var(--primary-blue)" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="150" cy="170" r="5" fill="var(--primary-blue)"/>
+                    </svg>
+                </div>
+                
+                <form id="appointment-form" class="appointment-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required placeholder="John Smith">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" required placeholder="(555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="john@example.com">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reason">Reason for Visit</label>
+                            <select id="reason" required>
+                                <option value="">Select a reason</option>
+                                <option value="cleaning">Regular Cleaning</option>
+                                <option value="checkup">Checkup</option>
+                                <option value="whitening">Teeth Whitening</option>
+                                <option value="emergency">Emergency</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary btn-block">Confirm Appointment</button>
+                </form>
+            </div>
+            
+            <!-- Confirmation Message (Hidden by default) -->
+            <div id="confirmation-message" class="confirmation-message" style="display: none;">
+                <div class="confirmation-card">
+                    <div class="confirmation-icon">✅</div>
+                    <h3>Thank You!</h3>
+                    <p>Your appointment number is <strong>10XXX51</strong>. Our team will contact you shortly to confirm your visit.</p>
+                    <p class="confirmation-note">This is a demo. In production, this data would be sent to our scheduling system.</p>
+                    <button id="new-appointment" class="btn-secondary">Book Another Appointment</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="logo">
+                        <div class="logo-icon">🦷</div>
+                        <h2>Rittenhouse Dentist</h2>
+                    </div>
+                    <p class="footer-address">
+                        123 Dental Street<br>
+                        Rittenhouse, PA 19103
+                    </p>
+                    <p class="footer-phone">
+                        <a href="tel:+15551234567">(555) 123-4567</a>
+                    </p>
+                </div>
+                
+                <div class="footer-hours">
+                    <h3>Office Hours</h3>
+                    <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
+                    <p>Saturday: 9:00 AM - 3:00 PM</p>
+                    <p>Emergency: 24/7 On Call</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Rittenhouse Dentist. All rights reserved.</p>
+                <p>Professional dental care in the heart of Rittenhouse.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <!-- Non-critical CSS -->
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+</body>
+  </html>
